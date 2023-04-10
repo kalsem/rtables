@@ -559,7 +559,7 @@ export_as_rtf <- function(tt,
     tbls <- paginate_table(tt, font_family = font_family, font_size = font_size,
                            pg_width = true_width,
                            pg_height = true_height,
-                           margins = c(bottom = 0, left = 0, top = 0, right = 0),
+                           margins = c(bottom = 2.5, left = 2.5, top = 2.5, right = 2.5),
                            lineheight = 1.25,
                            colwidths = colwidths,
                            ...)
@@ -570,7 +570,7 @@ export_as_rtf <- function(tt,
                                                                        pg_width = pg_width,
                                                                        pg_height = pg_height,
                                                                        font_size = font_size,
-                                                                       margins = c(top = 0, left = 0, bottom = 0, right = 0))))
+                                                                       margins = c(top = 2.5, left = 2.5, bottom = 2.5, right = 2.5))))
     restxt <- paste(rtftxts[[1]]$start,
                     paste(sapply(rtftxts, function(x) x$body), collapse = "\n{\\pard\\fs2\\par}\\page{\\pard\\fs2\\par}\n"),
                     rtftxts[[1]]$end)
