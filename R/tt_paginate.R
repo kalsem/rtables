@@ -620,11 +620,11 @@ pag_tt_indices <- function(tt, lpp = 15,
                 rlpp, " (original lpp: ", lpp, ")")
     pagdf <- make_row_df(tt, colwidths, max_width = max_width)
 
-    pag_indices_inner(pagdf, rlpp = rlpp, min_siblings = min_siblings,
-                      nosplitin = nosplitin,
-                      verbose = verbose,
-                      have_col_fnotes = have_cfnotes,
-                      div_height = dheight)
+    #pag_indices_inner(pagdf, rlpp = rlpp, min_siblings = min_siblings,
+    #                  nosplitin = nosplitin,
+    #                  verbose = verbose,
+    #                  have_col_fnotes = have_cfnotes,
+    #                  div_height = dheight)
 }
 
 
