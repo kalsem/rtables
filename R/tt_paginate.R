@@ -583,7 +583,7 @@ setMethod("inner_col_df", "LayoutColTree",
 #' })
 #'
 #'
-pag_tt_indices <- function(tt, lpp = 15,
+pag_tt_indices <- function(tt, lpp = 10,
                            min_siblings = 2,
                            nosplitin = character(),
                            colwidths = NULL,
