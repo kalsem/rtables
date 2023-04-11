@@ -539,8 +539,8 @@ export_as_rtf <- function(tt,
                       page_type = "letter",
                       pg_width = page_dim(page_type)[if(landscape) 2 else 1],
                       pg_height = page_dim(page_type)[if(landscape) 1 else 2],
-                      landscape = FALSE,
-                      margins = c(bottom = 4, left = 4, top=4, right = 4),
+                      landscape = TRUE,
+                      margins = c(bottom = 2, left = 2, top=2, right =2),
                       font_size = 8,
                       font_family = "Courier",
                       ...) {
@@ -559,7 +559,7 @@ export_as_rtf <- function(tt,
     tbls <- paginate_table(tt, font_family = font_family, font_size = font_size,
                            pg_width = true_width,
                            pg_height = true_height,
-                           margins = c(bottom = 4, left = 4, top =4, right = 4),
+                           margins = c(bottom = 2, left = 2, top =2, right = 2),
                            lineheight = 1.25,
                            colwidths = colwidths,
                            ...)
@@ -570,7 +570,7 @@ export_as_rtf <- function(tt,
                                                                        pg_width = pg_width,
                                                                        pg_height = pg_height,
                                                                        font_size = font_size,
-                                                                       margins = c(top = 4, left = 4, bottom = 4, right = 4))))
+                                                                       margins = c(top = 2, left = 2, bottom = 2, right = 2))))
     restxt <- paste(rtftxts[[1]]$start,
                     paste(sapply(rtftxts, function(x) x$body), collapse = "\n{\\pard\\fs2\\par}\\page{\\pard\\fs2\\par}\n"),
                     rtftxts[[1]]$end)
