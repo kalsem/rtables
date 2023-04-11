@@ -583,7 +583,7 @@ setMethod("inner_col_df", "LayoutColTree",
 #' })
 #'
 #'
-pag_tt_indices <- function(tt, lpp = 10,
+pag_tt_indices <- function(tt, lpp = 15,
                            min_siblings = 2,
                            nosplitin = character(),
                            colwidths = NULL,
@@ -703,7 +703,7 @@ paginate_table <- function(tt,
                            pg_width = NULL,
                            pg_height = NULL,
                            margins = c(top = .5, bottom = .5, left = .75, right = .75),
-                           lpp,
+                           lpp=15,
                            cpp,
                            min_siblings = 2,
                            nosplitin = character(),
